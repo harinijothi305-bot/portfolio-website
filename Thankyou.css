@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #ffffff;
+    color: #5b321f;
+    overflow-x: hidden;
+}
+
+
+/* MAIN SECTION */
+
+.thankyou-section {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #fff8f3,
+            #ffffff 60%
+        );
+}
+
+
+/* THANK YOU CARD */
+
+.thankyou-card {
+    position: relative;
+
+    width: 650px;
+    max-width: 100%;
+
+    padding: 55px 45px;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 2px solid #c18a68;
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 0 15px rgba(139, 78, 45, 0.15),
+        0 0 40px rgba(193, 138, 104, 0.15);
+
+    animation: cardGlow 4s ease-in-out infinite;
+
+    z-index: 2;
+}
+
+
+/* CARD GLOW */
+
+@keyframes cardGlow {
+
+    0%, 100% {
+        box-shadow:
+            0 0 15px rgba(139, 78, 45, 0.15),
+            0 0 35px rgba(193, 138, 104, 0.12);
+    }
+
+    50% {
+        box-shadow:
+            0 0 25px rgba(139, 78, 45, 0.35),
+            0 0 60px rgba(193, 138, 104, 0.25);
+    }
+}
+
+
+/* TOP ICON */
+
+.top-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto 20px;
+
+    font-size: 35px;
+
+    border-radius: 50%;
+
+    background: #f5e5da;
+
+    box-shadow:
+        0 0 15px rgba(139, 78, 45, 0.25);
+
+    animation: heartGlow 2s ease-in-out infinite;
+}
+
+
+@keyframes heartGlow {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+        box-shadow:
+            0 0 25px rgba(139, 78, 45, 0.45);
+    }
+}
+
+
+/* SMALL TITLE */
+
+.small-text {
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    font-weight: bold;
+
+    color: #9a6a51;
+
+    margin-bottom: 15px;
+}
+
+
+/* MAIN TITLE */
+
+.thankyou-card h1 {
+    font-size: 65px;
+
+    color: #5b321f;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 10px rgba(139, 78, 45, 0.3),
+        0 0 25px rgba(193, 138, 104, 0.3);
+}
+
+
+.thankyou-card h1 span {
+    font-size: 45px;
+}
+
+
+/* MESSAGE */
+
+.message {
+    max-width: 500px;
+
+    margin: 10px auto;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #725443;
+}
+
+
+/* DIVIDER */
+
+.divider {
+    margin: 30px 0;
+
+    color: #a66d4e;
+
+    letter-spacing: 3px;
+}
+
+
+/* DEVELOPER TITLE */
+
+.thankyou-card h2 {
+    font-size: 25px;
+
+    color: #6b3d25;
+
+    margin-bottom: 10px;
+}
+
+
+.thankyou-card h2 span {
+    margin-right: 8px;
+}
+
+
+/* DREAM */
+
+.dream {
+    font-size: 15px;
+
+    font-style: italic;
+
+    color: #96715e;
+
+    margin-bottom: 30px;
+}
+
+
+/* BUTTON AREA */
+
+.buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+    margin-top: 25px;
+}
+
+
+/* HOME BUTTON */
+
+.home-btn,
+.project-btn {
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.4s ease;
+}
+
+
+/* HOME */
+
+.home-btn {
+    background: #8b4e2d;
+
+    color: white;
+
+    box-shadow:
+        0 5px 20px rgba(139, 78, 45, 0.25);
+}
+
+
+.home-btn:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px #8b4e2d,
+        0 0 35px #c18a68;
+}
+
+
+/* PROJECT */
+
+.project-btn {
+    border: 2px solid #8b4e2d;
+
+    color: #6b3d25;
+
+    background: white;
+}
+
+
+.project-btn:hover {
+    background: #8b4e2d;
+
+    color: white;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(139, 78, 45, 0.4);
+}
+
+
+/* FOOTER */
+
+.footer-text {
+    margin-top: 40px;
+
+    font-size: 13px;
+
+    color: #a27c68;
+
+    letter-spacing: 1px;
+}
+
+
+/* FLOATING STARS */
+
+.stars span {
+    position: fixed;
+
+    color: #8b4e2d;
+
+    font-size: 20px;
+
+    opacity: 0.6;
+
+    pointer-events: none;
+
+    animation: floatStar 6s linear infinite;
+
+    z-index: 1;
+}
+
+
+.stars span:nth-child(1) {
+    left: 8%;
+    top: 15%;
+    animation-delay: 0s;
+}
+
+.stars span:nth-child(2) {
+    left: 20%;
+    top: 75%;
+    animation-delay: 1s;
+}
+
+.stars span:nth-child(3) {
+    left: 35%;
+    top: 20%;
+    animation-delay: 2s;
+}
+
+.stars span:nth-child(4) {
+    left: 50%;
+    top: 80%;
+    animation-delay: 3s;
+}
+
+.stars span:nth-child(5) {
+    left: 65%;
+    top: 15%;
+    animation-delay: 1.5s;
+}
+
+.stars span:nth-child(6) {
+    left: 78%;
+    top: 70%;
+    animation-delay: 2.5s;
+}
+
+.stars span:nth-child(7) {
+    left: 90%;
+    top: 25%;
+    animation-delay: 3.5s;
+}
+
+.stars span:nth-child(8) {
+    left: 95%;
+    top: 80%;
+    animation-delay: 4s;
+}
+
+
+@keyframes floatStar {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg)
+            scale(1);
+
+        opacity: 0.3;
+    }
+
+    50% {
+        transform:
+            translateY(-40px)
+            rotate(180deg)
+            scale(1.4);
+
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translateY(0)
+            rotate(360deg)
+            scale(1);
+
+        opacity: 0.3;
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .thankyou-card {
+        padding: 40px 20px;
+    }
+
+    .thankyou-card h1 {
+        font-size: 45px;
+    }
+
+    .thankyou-card h1 span {
+        font-size: 30px;
+    }
+
+    .thankyou-card h2 {
+        font-size: 21px;
+    }
+
+    .message {
+        font-size: 14px;
+    }
+
+    .small-text {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .home-btn,
+    .project-btn {
+        width: 100%;
+    }
+}
